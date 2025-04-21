@@ -1,0 +1,10 @@
+	
+			(__________/*   QUEUE    *\___________)
+
+A queue is a data structure used for storing data (similar to Linked Lists and Stacks). In queue, the
+order in which data arrives is important. In general, a queue is a line of people or things waiting
+to be served in sequential order starting at the beginning of the line or sequence.
+
+Definition: A queue is an ordered list in which insertions are done at one end (rear) and
+deletions are done at other end (front). The first element to be inserted is the first one to be
+deleted. Hence, it is called First in First out (FIFO) or Last in Last out (LILO) list.
