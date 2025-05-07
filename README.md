@@ -34,3 +34,15 @@ This repository contains three implementations of the Queue data structure:
 - Reuses empty spaces
 - Automatic resizing when full
 - O(1) amortized operations
+
+## Important Implementation Note
+
+The circular queue implementation requires one empty slot to distinguish between full and empty states. This means:
+
+- If you create a queue with size `N` (`Queue<int>(N)`), it will actually hold **N-1 elements**
+- For example: `Queue<int>(4)` can hold maximum 3 elements
+
+This design:
+- Makes full/empty checks more efficient (O(1) time)
+- Is a common tradeoff in circular buffer implementations
+- Ensures thread-safe empty/full detection in concurrent scenarios
