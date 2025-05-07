@@ -96,7 +96,7 @@ public:
 		if (Isempty())
 			std::cout << "Queue is empty \n";
 		else {
-			int i = (this->front + 1) % this->size];
+			int i = (this->front + 1) % this->size;
 			do{
 				std::cout << array[i] << " ";
 				i = (i + 1) % this->size;

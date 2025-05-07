@@ -4,11 +4,11 @@
 int main() {
 
     Queue<int> q(4);
-    q.DeQueue();
+    q.DeQueue();  // Output: Queue is empty
     q.EnQueue(1);
     q.EnQueue(2);
     q.EnQueue(3);
-    q.EnQueue(4);
+    q.EnQueue(4); // Output: Queue is full 
     q.Display(); // Output: 1 2 3
     std::cout << "Peek: " << q.Peek() << "\n"; // Output: Peek: 1
     std::cout << "DeQueue: " << q.DeQueue() << "\n"; // Output: DeQueue: 1
